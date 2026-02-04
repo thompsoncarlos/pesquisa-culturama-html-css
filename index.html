@@ -67,6 +67,7 @@
               value="notInformed"
             />
             <label for="notInformed">Not Informed</label>
+            <br />
 
             <label for="maritalStatus">Marital Status:</label>
             <select id="maritalStatus" name="maritalStatus">
@@ -75,6 +76,7 @@
               <option value="single">Single</option>
               <option value="divorced">Divorced</option>
             </select>
+            <br />
 
             <label for="city">City:</label>
             <select id="city" name="city">
@@ -158,11 +160,21 @@
             <legend>Habits:</legend>
 
             <p>Social Media</p>
-            <input type="checkbox" id="instagram" name="social" value="instagram" />
+            <input
+              type="checkbox"
+              id="instagram"
+              name="social"
+              value="instagram"
+            />
             <label for="instagram">Instagram</label>
             <br />
 
-            <input type="checkbox" id="facebook" name="social" value="facebook" />
+            <input
+              type="checkbox"
+              id="facebook"
+              name="social"
+              value="facebook"
+            />
             <label for="facebook">Facebook</label>
             <br />
 
@@ -170,8 +182,42 @@
             <label for="x">X</label>
             <br />
 
-            <input type="checkbox" id="linkedin" name="social" value="linkedin" />
+            <input
+              type="checkbox"
+              id="linkedin"
+              name="social"
+              value="linkedin"
+            />
             <label for="linkedin">LinkedIn</label>
+            <br />
+
+            <label for="musicStyle">Music Style:</label>
+            <input
+              id="musicStyle"
+              type="text"
+              name="musicStyle"
+              list="styleTypes"
+            />
+            <datalist id="styleTypes">
+              <option value="Pop"></option>
+              <option value="Rock"></option>
+              <option value="Jazz"></option>
+              <option value="Classical"></option>
+              <option value="Fado"></option>
+              <option value="Hip Hop"></option>
+              <option value="Electronic"></option>
+              <option value="Reggae"></option>
+              <option value="Blues"></option>
+              <option value="Country"></option>
+              <option value="Metal"></option>
+              <option value="Salsa"></option>
+              <option value="R&B"></option>
+              <option value="Punk"></option>
+              <option value="Funk"></option>
+              <option value="Gospel"></option>
+              <option value="Disco"></option>
+              <option value="Indie"></option>
+            </datalist>
           </fieldset>
 
           <button type="submit">Send</button>
