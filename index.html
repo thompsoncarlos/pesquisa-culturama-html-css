@@ -1,26 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pesquisa Culturama</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <head>
-      <h1>Pesquisa Online</h1>
+      <h1>Online Research</h1>
       <section>
         <form action="" method="get">
           <fieldset>
-            <!-- Dados Pessoais -->
-            <legend>Dados Pessoais</legend>
-            <label for="userName">Nome</label>
+            <legend>Personal Information</legend>
+            <label for="userName">Name</label>
             <input type="text" name="userName" required />
             <br />
-            <label for="age">Idade</label>
+            <label for="age">Age</label>
             <input type="number" name="age" min="12" max="100" required />
             <br />
 
-            <label for="birthDate">Data de nascimento</label>
+            <label for="birthDate">Birth Date</label>
             <input type="date" name="birthDate" />
             <br />
 
@@ -28,20 +28,20 @@
             <input type="email" name="userEmail" required />
             <br />
 
-            <label for="userPhoneNumber">Telefone</label>
+            <label for="userPhoneNumber">Phone</label>
             <input
               type="tel"
               name="userPhoneNumber"
               pattern="[0-9]{11}"
-              placeholder="DDD + número sem espaços"
+              placeholder="000 + number without space"
             />
             <br />
 
-            <label for="userImage">Upload de foto</label>
+            <label for="userImage">Upload Photo</label>
             <input type="file" accept="image/*" name="userImage" />
             <br />
           </fieldset>
-          <button type="submit">Enviar</button>
+          <button type="submit">Send</button>
         </form>
       </section>
     </head>
