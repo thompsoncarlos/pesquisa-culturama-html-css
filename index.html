@@ -224,6 +224,47 @@
             <input type="color" id="favoriteColor" name="favoriteColor" />
           </fieldset>
 
+          <fieldset>
+            <legend>Opinion</legend>
+            <p>Satisfaction Level:</p>
+
+            <input
+              type="radio"
+              name="satisfactionLevel"
+              id="excellent"
+              value="excellent"
+            />
+            <label for="excellent">Excellent</label>
+            <br />
+            <input
+              type="radio"
+              name="satisfactionLevel"
+              id="good"
+              value="good"
+            />
+            <label for="good">Good</label>
+            <br />
+
+            <input
+              type="radio"
+              name="satisfactionLevel"
+              id="regular"
+              value="regular"
+            />
+            <label for="regular">Regular</label>
+            <br />
+
+            <input type="radio" name="satisfactionLevel" id="bad" value="bad" />
+            <label for="bad">Bad</label>
+            <br />
+
+            <label for="comments">Additional Comments:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Write here..."
+            ></textarea>
+          </fieldset>
           <button type="submit">Send</button>
         </form>
       </section>
