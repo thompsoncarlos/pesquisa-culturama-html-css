@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -41,6 +41,21 @@
             <input type="file" accept="image/*" name="userImage" />
             <br />
           </fieldset>
+          <fieldset>
+            <legend>Profile</legend>
+
+            <p>Gender:</p>
+            <label for="userGender">
+            <input type="radio" name="userGender" value="female">
+            <label for="userGender">Female</label>
+
+            <input type="radio" name="userGender"value="male">
+            <label for="userGender">Male</label>
+
+            <input type="radio" name="userGender" value="notInformed">
+            <label for="userGender">Not Informed</label>
+          </fieldset>
+          
           <button type="submit">Send</button>
         </form>
       </section>
