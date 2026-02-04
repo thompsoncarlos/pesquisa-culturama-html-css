@@ -1,26 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!doctype html>
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pesquisa Culturama</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <head>
-      <h1>Pesquisa Online</h1>
+      <h1>Online Research</h1>
       <section>
         <form action="" method="get">
           <fieldset>
-            <!-- Dados Pessoais -->
-            <legend>Dados Pessoais</legend>
-            <label for="userName">Nome</label>
+            <legend>Personal Information</legend>
+            <label for="userName">Name</label>
             <input type="text" name="userName" required />
             <br />
-            <label for="age">Idade</label>
+            <label for="age">Age</label>
             <input type="number" name="age" min="12" max="100" required />
             <br />
 
-            <label for="birthDate">Data de nascimento</label>
+            <label for="birthDate">Birth Date</label>
             <input type="date" name="birthDate" />
             <br />
 
@@ -28,20 +28,120 @@
             <input type="email" name="userEmail" required />
             <br />
 
-            <label for="userPhoneNumber">Telefone</label>
+            <label for="userPhoneNumber">Phone</label>
             <input
               type="tel"
               name="userPhoneNumber"
               pattern="[0-9]{11}"
-              placeholder="DDD + número sem espaços"
+              placeholder="000 + number without space"
             />
             <br />
 
-            <label for="userImage">Upload de foto</label>
+            <label for="userImage">Upload Photo</label>
             <input type="file" accept="image/*" name="userImage" />
             <br />
           </fieldset>
-          <button type="submit">Enviar</button>
+          <fieldset>
+            <legend>Profile</legend>
+
+            <p>Gender:</p>
+            <label for="userGender">
+            <input type="radio" name="userGender" value="female">
+            <label for="userGender">Female</label>
+
+            <input type="radio" name="userGender"value="male">
+            <label for="userGender">Male</label>
+
+            <input type="radio" name="userGender" value="notInformed">
+            <label for="userGender">Not Informed</label>
+
+            <label for="maritalStatus">Marital Status:</label>
+            <select name="maritalStatus">
+              <option value="notInformed">Select...</option>
+              <option value="married">Married</option>
+              <option value="single">Single</option>
+              <option value="divorced">Divorced</option>
+            </select>
+
+            <label for="city">City:</label>
+            <select name="city">
+              <option value="Porto">Porto</option>
+              <option value="Lisbon">Lisbon</option>
+              <option value="Aves">Aves</option>
+              <option value="Sintra">Sintra</option>
+              <option value="Vila Nova de Gaia">Vila Nova de Gaia</option>
+              <option value="Cascais">Cascais</option>
+              <option value="Loures">Loures</option>
+              <option value="Seixal">Seixal</option>
+              <option value="Braga">Braga</option>
+              <option value="Almada">Almada</option>
+              <option value="Matosinhos">Matosinhos</option>
+              <option value="Amadora">Amadora</option>
+              <option value="Oeiras">Oeiras</option>
+              <option value="Gondomar">Gondomar</option>
+              <option value="Guimarães">Guimarães</option>
+              <option value="Odivelas">Odivelas</option>
+              <option value="Coimbra">Coimbra</option>
+              <option value="Vila Franca de Xira">Vila Franca de Xira</option>
+              <option value="Maia">Maia</option>
+              <option value="Famalicão">Famalicão</option>
+              <option value="Leiria">Leiria</option>
+              <option value="Barcelos">Barcelos</option>
+              <option value="Viseu">Viseu</option>
+              <option value="Viana do Castelo">Viana do Castelo</option>
+              <option value="Aveiro">Aveiro</option>
+              <option value="Barreiro">Barreiro</option>
+              <option value="Queluz">Queluz</option>
+              <option value="Ponta Delgada">Ponta Delgada</option>
+              <option value="Faro">Faro</option>
+              <option value="Santarém">Santarém</option>
+              <option value="Castelo Branco">Castelo Branco</option>
+              <option value="Ovar">Ovar</option>
+              <option value="Évora">Évora</option>
+              <option value="Vila Real">Vila Real</option>
+              <option value="Rio Tinto">Rio Tinto</option>
+              <option value="Amora">Amora</option>
+              <option value="Águeda">Águeda</option>
+              <option value="Vale de Cavalos">Vale de Cavalos</option>
+              <option value="Corroios">Corroios</option>
+              <option value="Albufeira">Albufeira</option>
+              <option value="Guarda">Guarda</option>
+              <option value="Abrantes">Abrantes</option>
+              <option value="Mafamude">Mafamude</option>
+              <option value="Ermezinde">Ermezinde</option>
+              <option value="Beja">Beja</option>
+              <option value="Agualva">Agualva</option>
+              <option value="Bragança">Bragança</option>
+              <option value="Espinho">Espinho</option>
+              <option value="Charneca">Charneca</option>
+              <option value="Perafita">Perafita</option>
+              <option value="Funchal">Funchal</option>
+              <option value="Póvoa de Santa Iria">Póvoa de Santa Iria</option>
+              <option value="Senhora da Hora">Senhora da Hora</option>
+              <option value="Tondela">Tondela</option>
+              <option value="Arrentela">Arrentela</option>
+              <option value="Massamá">Massamá</option>
+              <option value="Águas Santas">Águas Santas</option>
+              <option value="Estoril">Estoril</option>
+              <option value="Pinhal Novo">Pinhal Novo</option>
+              <option value="Portalegre">Portalegre</option>
+              <option value="Cartaxo">Cartaxo</option>
+              <option value="Lagoa">Lagoa</option>
+              <option value="Vagos">Vagos</option>
+              <option value="São João da Madeira">São João da Madeira</option>
+              <option value="Oliveira de Azemeis">Oliveira de Azemeis</option>
+              <option value="Entroncamento">Entroncamento</option>
+              <option value="Mangualde">Mangualde</option>
+              <option value="Arganil">Arganil</option>
+              <option value="Ponte da Barca">Ponte da Barca</option>
+              <option value="Feira">Feira</option>
+              <option value="Setúbal">Setúbal</option>
+              <option value="Paredes de Coura">Paredes de Coura</option>
+              <option value="Belmonte">Belmonte</option>
+            </select>
+          </fieldset>
+          
+          <button type="submit">Send</button>
         </form>
       </section>
     </head>
