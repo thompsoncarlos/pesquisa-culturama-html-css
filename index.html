@@ -13,58 +13,73 @@
         <form action="" method="get">
           <fieldset>
             <legend>Personal Information</legend>
-            <label for="userName">Name</label>
-            <input type="text" name="userName" required />
+            <label for="name">Name</label>
+            <input type="text" id="name" name="userName" required />
             <br />
             <label for="age">Age</label>
-            <input type="number" name="age" min="12" max="100" required />
+            <input
+              type="number"
+              id="age"
+              name="userAge"
+              min="12"
+              max="100"
+              required
+            />
             <br />
 
             <label for="birthDate">Birth Date</label>
-            <input type="date" name="birthDate" />
+            <input type="date" id="birthDate" name="userBirthDate" required />
             <br />
 
-            <label for="userEmail">Email</label>
-            <input type="email" name="userEmail" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="userEmail" required />
             <br />
 
-            <label for="userPhoneNumber">Phone</label>
+            <label for="phone">Phone</label>
             <input
               type="tel"
+              id="phone"
               name="userPhoneNumber"
               pattern="[0-9]{11}"
               placeholder="000 + number without space"
             />
             <br />
 
-            <label for="userImage">Upload Photo</label>
-            <input type="file" accept="image/*" name="userImage" />
+            <label for="image">Upload Photo</label>
+            <input type="file" id="image" accept="image/*" name="userImage" />
             <br />
           </fieldset>
+
           <fieldset>
             <legend>Profile</legend>
 
             <p>Gender:</p>
-            <label for="userGender">
-            <input type="radio" name="userGender" value="female">
-            <label for="userGender">Female</label>
+            <input type="radio" id="female" name="userGender" value="female" />
+            <label for="female">Female</label>
 
-            <input type="radio" name="userGender"value="male">
-            <label for="userGender">Male</label>
+            <input type="radio" id="male" name="userGender" value="male" />
+            <label for="male">Male</label>
 
-            <input type="radio" name="userGender" value="notInformed">
-            <label for="userGender">Not Informed</label>
+            <input
+              type="radio"
+              id="notInformed"
+              name="userGender"
+              value="notInformed"
+            />
+            <label for="notInformed">Not Informed</label>
+            <br />
 
             <label for="maritalStatus">Marital Status:</label>
-            <select name="maritalStatus">
+            <select id="maritalStatus" name="maritalStatus">
               <option value="notInformed">Select...</option>
               <option value="married">Married</option>
               <option value="single">Single</option>
               <option value="divorced">Divorced</option>
             </select>
+            <br />
 
             <label for="city">City:</label>
-            <select name="city">
+            <select id="city" name="city">
               <option value="Porto">Porto</option>
               <option value="Lisbon">Lisbon</option>
               <option value="Aves">Aves</option>
@@ -140,7 +155,116 @@
               <option value="Belmonte">Belmonte</option>
             </select>
           </fieldset>
-          
+
+          <fieldset>
+            <legend>Habits:</legend>
+
+            <p>Social Media</p>
+            <input
+              type="checkbox"
+              id="instagram"
+              name="social"
+              value="instagram"
+            />
+            <label for="instagram">Instagram</label>
+            <br />
+
+            <input
+              type="checkbox"
+              id="facebook"
+              name="social"
+              value="facebook"
+            />
+            <label for="facebook">Facebook</label>
+            <br />
+
+            <input type="checkbox" id="x" name="social" value="x" />
+            <label for="x">X</label>
+            <br />
+
+            <input
+              type="checkbox"
+              id="linkedin"
+              name="social"
+              value="linkedin"
+            />
+            <label for="linkedin">LinkedIn</label>
+            <br />
+
+            <label for="musicStyle">Music Style:</label>
+            <input
+              id="musicStyle"
+              type="text"
+              name="musicStyle"
+              list="styleTypes"
+            />
+            <datalist id="styleTypes">
+              <option value="Pop"></option>
+              <option value="Rock"></option>
+              <option value="Jazz"></option>
+              <option value="Classical"></option>
+              <option value="Fado"></option>
+              <option value="Hip Hop"></option>
+              <option value="Electronic"></option>
+              <option value="Reggae"></option>
+              <option value="Blues"></option>
+              <option value="Country"></option>
+              <option value="Metal"></option>
+              <option value="Salsa"></option>
+              <option value="R&B"></option>
+              <option value="Punk"></option>
+              <option value="Funk"></option>
+              <option value="Gospel"></option>
+              <option value="Disco"></option>
+              <option value="Indie"></option>
+            </datalist>
+            <br />
+
+            <label for="favoriteColor">Favorite Color:</label>
+            <input type="color" id="favoriteColor" name="favoriteColor" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Opinion</legend>
+            <p>Satisfaction Level:</p>
+
+            <input
+              type="radio"
+              name="satisfactionLevel"
+              id="excellent"
+              value="excellent"
+            />
+            <label for="excellent">Excellent</label>
+            <br />
+            <input
+              type="radio"
+              name="satisfactionLevel"
+              id="good"
+              value="good"
+            />
+            <label for="good">Good</label>
+            <br />
+
+            <input
+              type="radio"
+              name="satisfactionLevel"
+              id="regular"
+              value="regular"
+            />
+            <label for="regular">Regular</label>
+            <br />
+
+            <input type="radio" name="satisfactionLevel" id="bad" value="bad" />
+            <label for="bad">Bad</label>
+            <br />
+
+            <label for="comments">Additional Comments:</label>
+            <textarea
+              id="comments"
+              name="comments"
+              placeholder="Write here..."
+            ></textarea>
+          </fieldset>
           <button type="submit">Send</button>
         </form>
       </section>
