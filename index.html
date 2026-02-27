@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pesquisa Culturama</title>
+    <link rel="icon" href="./img/culturama-favico.png">
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap"
+      rel="stylesheet">
   </head>
   <body>
     <head>
@@ -253,6 +259,21 @@
               id="comments"
               name="comments"
               placeholder="Write here..."></textarea>
+          </fieldset>
+          <fieldset>
+            <legend>Confirmation</legend>
+
+            <input type="checkbox" name="userLgpd" id="userLgpdTerm"
+              value="accepted" required>
+            <label for="userLgpdTerm">I agree with the terms of use and privacy
+              policy.</label><br />
+
+            <input type="checkbox" name="userGetResult" id="getResult"
+              value="accepted">
+            <label for="userGetResult">I would receive the research results by
+              email.
+              policy.</label><br />
+
           </fieldset>
           <button type="submit">Send</button>
         </form>
