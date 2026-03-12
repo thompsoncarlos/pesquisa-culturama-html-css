@@ -1,3 +1,10 @@
+:root {
+  --color-bg: #00163b;
+  --color-bg-form: #ffffff;
+  --color-text-primary: #000000;
+  --color-text-title: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +12,7 @@
 }
 
 body {
-  background-color: #00163b;
+  background-color: var(--color-bg);
   font-family: "Work Sans", sans-serif;
 }
 
@@ -25,11 +32,12 @@ img {
 
 h1 {
   font-family: "Fjalla One", sans-serif;
-  color: white;
+  color: var(--color-text-title);
+  font-size: 2rem;
 }
 
 form {
-  background-color: #ffffff;
+  background-color: var(--color-bg-form);
   padding: 15px;
   border-radius: 10px;
   margin-bottom: 100px;
@@ -43,7 +51,7 @@ fieldset {
 
 legend {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 1.125rem;
   padding: 0 5px;
 }
 
@@ -107,14 +115,15 @@ button {
   width: 100px;
   height: 30px;
   margin-right: 10px;
-  background-color: #ffffff;
-  border: 1px solid #cccccc;
+  background-color: #00163b;
+  color: #ffffff;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #00163b;
+  background-color: green;
   color: #ffffff;
 }
 button[type="reset"]:hover {
