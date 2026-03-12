@@ -10,16 +10,16 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap"
       rel="stylesheet">
-    <title>Pesquisa Culturama</title>
+    <title>Culturama Search</title>
   </head>
   <body>
     <main>
       <header>
         <img src="img/logo-branco.png" alt="logo culturama">
-        <h1>Online Research</h1>
+        <h1>Cultura Research</h1>
       </header>
       <section>
-        <form action="sucess.html" method="post">
+        <form action="sucess.html" method="get">
           <fieldset>
             <legend>Personal Information</legend>
             <label for="name">Name</label>
@@ -45,15 +45,20 @@
 
             <label for="phone">Phone</label>
             <input
-              type="tel"
               id="phone"
+              type="tel"
               name="userPhoneNumber"
               pattern="[0-9]{11}"
-              placeholder="000 + number without space" />
+              placeholder="000 + number without space"
+              aria-describedby="phoneHelp" />
+            <small id="phoneHelp">Fill will 11 digit in the format 000 + number
+              withou space.</small>
             <br />
 
             <label for="image">Upload Photo</label>
-            <input type="file" id="image" accept="image/*" name="userImage" />
+            <input type="file" id="image" accept="image/*" name="userImage"
+              aria-describedby="imageHelp" />
+            <small id="imageHelp">Send a image in the format PNG or JPEG</small>
             <br />
           </fieldset>
 
@@ -273,13 +278,13 @@
 
             <input type="checkbox" name="userGetResult" id="getResult"
               value="accepted">
-            <label for="userGetResult">I would receive the research results by
+            <label for="getResult">I would receive the research results by
               email.
               policy.</label><br />
 
           </fieldset>
-          <button type="submit">Send</button>
-          <button type="reset">Clean</button>
+          <button type="submit" aria-label="Send data from form">Send</button>
+          <button type="reset" aria-label="Clean data from form">Clean</button>
         </form>
       </section>
     </main>
