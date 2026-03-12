@@ -24,13 +24,20 @@ main {
 
 header {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 20px;
 }
+
 img {
   width: 100px;
 }
 
 h1 {
+  font-family: "Fjalla One", sans-serif;
+  color: var(--color-text-title);
+  font-size: 2rem;
+}
+
+p {
   font-family: "Fjalla One", sans-serif;
   color: var(--color-text-title);
   font-size: 2rem;
@@ -109,6 +116,16 @@ input:valid,
 select:valid,
 textarea:valid {
   border-color: green;
+}
+
+a {
+  padding: 5px;
+  background-color: #00163b;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 button {
