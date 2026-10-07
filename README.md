@@ -1,56 +1,57 @@
-# Culturama Research Form 
-
-Um projeto educacional desenvolvido durante o curso **HTML, CSS, Formulários, SEO e Acessibilidade** da Alura. O projeto consiste em um formulário de pesquisa cultural interativo com foco em boas práticas de SEO, acessibilidade web (WCAG) e validação de dados.
-
+# Culturama Research Form
+ 
+An educational project developed during the **HTML, CSS, Forms, SEO, and Accessibility** course by Alura. This project consists of an interactive cultural research form focused on SEO best practices, web accessibility (WCAG), and data validation.
+ 
 ---
 
 ![Capa do Projeto - Culturama Research](img/capa.png)
 
 ---
 
-## Objetivo do Projeto
-
-Criar um formulário de pesquisa que colha informações culturais dos usuários, aplicando as seguintes práticas:
-- ✅ HTML semântico e acessível
-- ✅ Otimização para SEO (meta tags, Open Graph)
-- ✅ Validação de formulário
-- ✅ Atributos ARIA para melhor acessibilidade
-- ✅ Design responsivo com CSS moderno
-
-## Estrutura do Projeto
-
-```
+## Project Objective
+ 
+Create a research form that collects cultural information from users while applying the following practices:
+ 
+- ✅ Semantic and accessible HTML
+- ✅ SEO optimization (meta tags, Open Graph)
+- ✅ Form validation
+- ✅ ARIA attributes for improved accessibility
+- ✅ Responsive design with modern CSS
+ 
+## Project Structure
+ 
+```text
 pesquisa-culturama/
-├── index.html              # Página principal com o formulário
-├── sucess.html             # Página de sucesso após envio
+├── index.html # Main page containing the form
+├── success.html # Success page displayed after submission
 ├── css/
-│   └── style.css           # Estilos globais do projeto
-├── img/                    # Imagens do projeto (logo, etc)
-└── README.md              # Documentação do projeto
-```
+│ └── style.css # Global project styles
+├── img/ # Project images (logo, etc.)
+└── README.md # Project documentation
+````
 
-## Ferramentas de SEO e Acessibilidade
+## SEO and Accessibility Tools
 
 ### 1. **Google Chrome Lighthouse**
 
-Ferramenta integrada no Chrome DevTools para auditoria de performance, SEO e acessibilidade.
+A tool integrated into Chrome DevTools for auditing performance, SEO, and accessibility.
 
-**Como usar:**
-1. Abra o projeto no navegador Chrome
-2. Pressione `F12` ou clique em `Ctrl+Shift+I` para abrir DevTools
-3. Vá para a aba **Lighthouse**
-4. Selecione as categorias desejadas (Performance, Accessibility, Best Practices, SEO, PWA)
-5. Clique em **Analyze page load**
-6. Aguarde a análise completar
+**How to use:**
+1. Open the project in Google Chrome
+2. Press F12 or Ctrl+Shift+I to open DevTools
+3. Go to the Lighthouse tab
+4. Select the desired categories (Performance, Accessibility, Best Practices, SEO, PWA)
+5. Click Analyze page load
+6. Wait for the analysis to complete
 
-**O que verificar:**
-- Performance e velocidade de carregamento
-- Acessibilidade WCAG
-- Boas práticas web
-- SEO básico e técnico
-- Conformidade com Progressive Web App (PWA)
+**What to check:**
+- Performance and page loading speed
+- WCAG accessibility compliance
+- Web best practices
+- Basic and technical SEO
+- Progressive Web App (PWA) compliance
 
-**Métricas importantes:**
+**Important metrics:**
 - Largest Contentful Paint (LCP)
 - First Input Delay (FID)
 - Cumulative Layout Shift (CLS)
@@ -60,16 +61,16 @@ Ferramenta integrada no Chrome DevTools para auditoria de performance, SEO e ace
 
 ### 2. **WAVE (Web Accessibility Evaluation Tool)**
 
-Ferramenta especializada em acessibilidade web que identifica problemas de contraste, estrutura de página, etc.
+A specialized web accessibility tool that identifies issues related to contrast, page structure, and more.
 
 **Link:** https://wave.webaim.org/
 
-**Como usar:**
-1. Acesse https://wave.webaim.org/
-2. Copie a URL do seu projeto (ex: `https://thompsoncarlos.github.io/pesquisa-culturama-html-css/`)
-3. Cole no campo de entrada na página do WAVE
-4. Clique em "Submit" ou pressione Enter
-5. Analise os resultados
+**What to look for:**
+1. Visit https://wave.webaim.org/
+2. Copy the URL of your project (e.g., https://thompsoncarlos.github.io/pesquisa-culturama-html-css/)
+3. Paste it into the input field on the WAVE page
+4. Click Submit or press Enter
+5. Review the results
 
 **O que procurar:**
 - **Erros (Errors):** Problemas críticos de acessibilidade (rótulos ausentes, contraste inadequado, etc)
@@ -77,26 +78,26 @@ Ferramenta especializada em acessibilidade web que identifica problemas de contr
 - **Estrutura (Structure):** Hierarquia de headings, landmarks, etc
 - **Recursos** (Features): Elementos acessíveis encontrados
 
-**Problemas comuns encontrados:**
-- Falta de labels em inputs
-- Contraste de cores insuficiente
-- Imagens sem texto alternativo (alt text)
-- Hierarquia de headings incorreta
-- Falta de atributos ARIA
+**Common issues found:**
+- Missing labels on inputs
+- Insufficient color contrast
+- Images without alternative text (alt text)
+- Incorrect heading hierarchy
+- Missing ARIA attributes
 
 ---
 
 ### 3. **Open Graph Preview Tool**
 
-Ferramenta para validar e visualizar como seu site aparecerá quando compartilhado em redes sociais.
+A tool used to validate and preview how your website will appear when shared on social media platforms.
 
 **Link:** https://www.opengraph.xyz/
 
-**Como usar:**
-1. Acesse https://www.opengraph.xyz/
-2. Copie a URL do seu projeto na barra de entrada
-3. Clique no botão de análise ou pressione Enter
-4. Visualize como aparecerá no Facebook, Twitter, LinkedIn, etc
+**How to use:**
+1. Visit https://www.opengraph.xyz/
+2. Paste your project URL into the input field
+3. Click the analyze button or press Enter
+4. Preview how it will appear on Facebook, Twitter, LinkedIn, and other platforms
 
 **Meta tags Open Graph utilizadas no projeto:**
 ```html
@@ -107,28 +108,28 @@ Ferramenta para validar e visualizar como seu site aparecerá quando compartilha
 <meta name="og:url" content="https://[...]/pesquisa-culturama-html-css/">
 ```
 
-**O que verificar:**
-- Imagem do Open Graph exibida corretamente
-- Título aparecendo como esperado
-- Descrição legível e atraente
-- URL correta no preview
+**What to verify:**
+- Open Graph image displays correctly
+- Title appears as expected
+- Description is readable and engaging
+- Correct URL is shown in the preview
 
 ---
 
-## Como Executar e Testar
+## How to Run and Test
 
-### 1. Clonar o Repositório
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/thompsoncarlos/pesquisa-culturama-html-css.git
 cd pesquisa-culturama-html-css
 ```
 
-### 2. Abrir Localmente
+### 2. Open locally
 ```bash
-# Opção 1: Abrir com Live Server (VS Code)
-# Instale a extensão Live Server e clique em "Go Live"
+# Option 1: Open with Live Server (VS Code)
+# Install the Live Server extension and click "Go Live"
 
-# Opção 2: Usar Node.js http-server
+# Option 2: Use Node.js http-server
 npx http-server
 ```
 
@@ -151,24 +152,24 @@ npx http-server
 
 ---
 
-## Boas Práticas Aplicadas
+## Best Practices Applied
 
-### HTML Semântico
-- Uso de `<header>`, `<main>`, `<section>`, `<fieldset>`, `<legend>`
-- Atributos `for` e `id` para associar labels aos inputs
-- Elementos de formulário estruturados corretamente
+### Semantic HTML 
+- Use of `<header>`, `<main>`, `<section>`, `<fieldset>`, `<legend>`
+- `for` and `id` attributes to associate labels with inputs
+- Properly form elements  structure
 
-### CSS Moderno
+### Modern CSS
 - CSS Variables (custom properties) para reutilização de valores
-- Design responsivo com viewport meta tag
-- Preconnect para otimizar carregamento de fontes externas
-
-### Validação
-- Atributos HTML nativos: `required`, `type`, `min`, `max`
-- Tipos de input: `text`, `number`, `date`, `email`, `tel`, `color`, `file`
+- Responsive Design with viewport meta tag
+- Preconnect to optimise loading of external fonts
+- 
+### Validation
+- Atributes natives HTML: `required`, `type`, `min`, `max`
+- Input types: `text`, `number`, `date`, `email`, `tel`, `color`, `file`
 - Validação no formulário antes de envio
 
-### Acessibilidade (WCAG)
+### Accessibility (WCAG)
 - ARIA labels para elementos sem texto visível
 - Roles semânticas nos elementos apropriados
 - Contraste de cores adequado
@@ -182,7 +183,7 @@ npx http-server
 
 ---
 
-## Recursos Educacionais
+## Educationals Resources
 
 - [MDN - Acessibilidade Web](https://developer.mozilla.org/pt-BR/docs/Web/Accessibility)
 - [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
